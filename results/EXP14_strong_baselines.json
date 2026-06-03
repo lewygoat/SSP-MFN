@@ -1,0 +1,160 @@
+{
+  "n_samples": 850,
+  "baselines": {
+    "B14_TabNet": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3105,
+          "r2": -0.0259,
+          "r": 0.0848
+        },
+        "IRI": {
+          "rmse": 1.2681,
+          "r2": -0.0385,
+          "r": 0.066
+        },
+        "CSAS": {
+          "rmse": 1.3667,
+          "r2": -0.0569,
+          "r": 0.036
+        },
+        "SSCS": {
+          "rmse": 1.2886,
+          "r2": -0.0134,
+          "r": 0.1021
+        },
+        "IOS": {
+          "rmse": 1.2701,
+          "r2": -0.0407,
+          "r": 0.0543
+        },
+        "SCI2": {
+          "rmse": 1.2247,
+          "r2": -0.0188,
+          "r": 0.119
+        },
+        "_mean": {
+          "rmse": 1.2881,
+          "r2": -0.0324,
+          "r": 0.077
+        }
+      },
+      "impl": "TabNet"
+    },
+    "B15_XGB_FE": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3007,
+          "r2": -0.0106,
+          "r": -0.0157
+        },
+        "IRI": {
+          "rmse": 1.2528,
+          "r2": -0.0136,
+          "r": -0.0557
+        },
+        "CSAS": {
+          "rmse": 1.327,
+          "r2": 0.0036,
+          "r": 0.114
+        },
+        "SSCS": {
+          "rmse": 1.2646,
+          "r2": 0.024,
+          "r": 0.1598
+        },
+        "IOS": {
+          "rmse": 1.2501,
+          "r2": -0.0081,
+          "r": -0.0156
+        },
+        "SCI2": {
+          "rmse": 1.2152,
+          "r2": -0.0031,
+          "r": 0.0503
+        },
+        "_mean": {
+          "rmse": 1.2684,
+          "r2": -0.0013,
+          "r": 0.0395
+        }
+      },
+      "impl": "XGBoost_FE"
+    },
+    "B16_AutoML": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3806,
+          "r2": -0.1386,
+          "r": -0.0175
+        },
+        "IRI": {
+          "rmse": 1.3074,
+          "r2": -0.1039,
+          "r": 0.0249
+        },
+        "CSAS": {
+          "rmse": 1.3962,
+          "r2": -0.1029,
+          "r": 0.0922
+        },
+        "SSCS": {
+          "rmse": 1.3196,
+          "r2": -0.0628,
+          "r": 0.1205
+        },
+        "IOS": {
+          "rmse": 1.2957,
+          "r2": -0.083,
+          "r": 0.0521
+        },
+        "SCI2": {
+          "rmse": 1.2566,
+          "r2": -0.0725,
+          "r": 0.127
+        },
+        "_mean": {
+          "rmse": 1.326,
+          "r2": -0.0939,
+          "r": 0.0665
+        }
+      },
+      "impl": "GBM_automl_fallback"
+    }
+  },
+  "SSP_MFN_ref_r2": 0.1186,
+  "DAP": {
+    "experiment": "EXP14_strong_baselines",
+    "total_checks": 3,
+    "passed": 1,
+    "warnings": 2,
+    "critical": 0,
+    "verdict": "⚠️ PROCEED_WITH_CAUTION: 有轻微问题，可继续但需在论文中声明",
+    "checks": [
+      {
+        "name": "stability",
+        "passed": 0.0,
+        "metric": 0.904628,
+        "threshold": 0.15,
+        "message": "⚠️ 结果不稳定: CV=0.9046 >= 0.15, mean=-0.0425±0.0385",
+        "severity": "warning"
+      },
+      {
+        "name": "permutation_baseline",
+        "passed": 1.0,
+        "metric": 19.436010360717773,
+        "threshold": 1.96,
+        "message": "模型显著优于置换基线: model=1.2684, perm=1.8274±0.0288, z=19.44",
+        "severity": "info"
+      },
+      {
+        "name": "effect_size",
+        "passed": false,
+        "metric": -0.042533,
+        "threshold": 0.02,
+        "message": "⚠️ 效应量过小: r 改善 -0.0425 < 2.0%, 可能无实际意义",
+        "severity": "warning"
+      }
+    ]
+  }
+}

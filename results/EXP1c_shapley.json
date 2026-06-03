@@ -1,0 +1,190 @@
+{
+  "config": {
+    "signal": 1.5,
+    "noise": 0.3,
+    "interact_ratio": 0.7
+  },
+  "model_r2": -0.1129,
+  "modality_shapley": {
+    "audio": -0.0014,
+    "meta": -0.0374,
+    "part": 0.8705
+  },
+  "modality_shapley_pct": {
+    "audio": 0.2,
+    "meta": 4.1,
+    "part": 95.7
+  },
+  "top20_features": [
+    {
+      "rank": 1,
+      "name": "music_exp",
+      "delta_mse": 0.545,
+      "modality": "part"
+    },
+    {
+      "rank": 2,
+      "name": "age",
+      "delta_mse": 0.2636,
+      "modality": "part"
+    },
+    {
+      "rank": 3,
+      "name": "IRI_pre",
+      "delta_mse": 0.0704,
+      "modality": "part"
+    },
+    {
+      "rank": 4,
+      "name": "ICS_pre",
+      "delta_mse": 0.0622,
+      "modality": "part"
+    },
+    {
+      "rank": 5,
+      "name": "session_num",
+      "delta_mse": 0.0604,
+      "modality": "part"
+    },
+    {
+      "rank": 6,
+      "name": "IOS_pre",
+      "delta_mse": 0.0551,
+      "modality": "part"
+    },
+    {
+      "rank": 7,
+      "name": "mandarin_prof",
+      "delta_mse": 0.043,
+      "modality": "part"
+    },
+    {
+      "rank": 8,
+      "name": "duration",
+      "delta_mse": 0.0319,
+      "modality": "part"
+    },
+    {
+      "rank": 9,
+      "name": "SCI2_pre",
+      "delta_mse": 0.0282,
+      "modality": "part"
+    },
+    {
+      "rank": 10,
+      "name": "CSAS_pre",
+      "delta_mse": 0.0223,
+      "modality": "part"
+    },
+    {
+      "rank": 11,
+      "name": "chroma_1",
+      "delta_mse": 0.0196,
+      "modality": "audio"
+    },
+    {
+      "rank": 12,
+      "name": "mfcc_2",
+      "delta_mse": 0.0146,
+      "modality": "audio"
+    },
+    {
+      "rank": 13,
+      "name": "education",
+      "delta_mse": 0.0137,
+      "modality": "part"
+    },
+    {
+      "rank": 14,
+      "name": "mfcc_11",
+      "delta_mse": 0.0132,
+      "modality": "audio"
+    },
+    {
+      "rank": 15,
+      "name": "mfcc_10",
+      "delta_mse": 0.0119,
+      "modality": "audio"
+    },
+    {
+      "rank": 16,
+      "name": "mfcc_12",
+      "delta_mse": 0.0093,
+      "modality": "audio"
+    },
+    {
+      "rank": 17,
+      "name": "mfcc_8",
+      "delta_mse": 0.008,
+      "modality": "audio"
+    },
+    {
+      "rank": 18,
+      "name": "tempo",
+      "delta_mse": 0.0073,
+      "modality": "audio"
+    },
+    {
+      "rank": 19,
+      "name": "ethnic_group_藏族",
+      "delta_mse": 0.0067,
+      "modality": "meta"
+    },
+    {
+      "rank": 20,
+      "name": "activity_type_民族音乐学习",
+      "delta_mse": 0.0066,
+      "modality": "meta"
+    }
+  ],
+  "interaction_verification": {
+    "audio×music_exp (→ICS)": {
+      "r_with_residual": 0.0008,
+      "p_residual": 0.9917122457911467,
+      "r_with_truth": 0.2471,
+      "captured_pct": 99.7
+    },
+    "audio×age (→ICS)": {
+      "r_with_residual": 0.0465,
+      "p_residual": 0.5470533562074652,
+      "r_with_truth": 0.3944,
+      "captured_pct": 88.2
+    },
+    "meta×age (→IRI)": {
+      "r_with_residual": -0.0513,
+      "p_residual": 0.5066208480846299,
+      "r_with_truth": 0.3622,
+      "captured_pct": 85.8
+    },
+    "meta×music_exp (→IRI)": {
+      "r_with_residual": -0.1339,
+      "p_residual": 0.0817651654492105,
+      "r_with_truth": 0.3688,
+      "captured_pct": 63.7
+    },
+    "audio×meta×music (→IOS)": {
+      "r_with_residual": 0.0515,
+      "p_residual": 0.5045075273502717,
+      "r_with_truth": 0.517,
+      "captured_pct": 90.0
+    },
+    "audio×music_exp (→CSAS)": {
+      "r_with_residual": -0.0193,
+      "p_residual": 0.8031944167052855,
+      "r_with_truth": 0.4245,
+      "captured_pct": 95.5
+    },
+    "age×music_exp (→SSCS)": {
+      "r_with_residual": -0.0105,
+      "p_residual": 0.8919532425643392,
+      "r_with_truth": 0.1545,
+      "captured_pct": 93.2
+    },
+    "meta0×meta1 (→SCI2)": {
+      "r_with_residual": -0.0758,
+      "p_residual": 0.32596409942284227,
+      "r_with_truth": 0.2574,
+      "captured_pct": 70.5999984741211
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "n_samples": 850,
+  "logo_results": {
+    "侗族": {
+      "n_train": 567,
+      "n_test": 283,
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3655,
+          "r2": -0.0076,
+          "r": 0.0196
+        },
+        "IRI": {
+          "rmse": 1.3499,
+          "r2": -0.022,
+          "r": -0.0992
+        },
+        "CSAS": {
+          "rmse": 1.3782,
+          "r2": -0.2305,
+          "r": -0.0108
+        },
+        "SSCS": {
+          "rmse": 1.2684,
+          "r2": -0.0084,
+          "r": 0.1088
+        },
+        "IOS": {
+          "rmse": 1.2215,
+          "r2": -0.0062,
+          "r": 0.1055
+        },
+        "SCI2": {
+          "rmse": 1.2515,
+          "r2": -0.2011,
+          "r": -0.0027
+        },
+        "_mean": {
+          "rmse": 1.3058,
+          "r2": -0.0793,
+          "r": 0.0202
+        }
+      }
+    },
+    "藏族": {
+      "n_train": 589,
+      "n_test": 261,
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3378,
+          "r2": -0.013,
+          "r": -0.0343
+        },
+        "IRI": {
+          "rmse": 1.1943,
+          "r2": -0.037,
+          "r": -0.0357
+        },
+        "CSAS": {
+          "rmse": 1.4422,
+          "r2": -0.1873,
+          "r": -0.0292
+        },
+        "SSCS": {
+          "rmse": 1.3382,
+          "r2": 0.0102,
+          "r": 0.1733
+        },
+        "IOS": {
+          "rmse": 1.2433,
+          "r2": -0.0128,
+          "r": 0.0524
+        },
+        "SCI2": {
+          "rmse": 1.625,
+          "r2": -0.7806,
+          "r": 0.1422
+        },
+        "_mean": {
+          "rmse": 1.3635,
+          "r2": -0.1701,
+          "r": 0.0448
+        }
+      }
+    },
+    "蒙古族": {
+      "n_train": 544,
+      "n_test": 306,
+      "metrics": {
+        "ICS": {
+          "rmse": 1.2015,
+          "r2": -0.0115,
+          "r": 0.1186
+        },
+        "IRI": {
+          "rmse": 1.2955,
+          "r2": -0.1352,
+          "r": -0.0409
+        },
+        "CSAS": {
+          "rmse": 1.6611,
+          "r2": -0.6693,
+          "r": 0.0622
+        },
+        "SSCS": {
+          "rmse": 1.2354,
+          "r2": -0.0017,
+          "r": 0.0049
+        },
+        "IOS": {
+          "rmse": 1.2813,
+          "r2": -0.012,
+          "r": -0.0201
+        },
+        "SCI2": {
+          "rmse": 1.1889,
+          "r2": -0.0062,
+          "r": -0.0441
+        },
+        "_mean": {
+          "rmse": 1.3106,
+          "r2": -0.1393,
+          "r": 0.0134
+        }
+      }
+    }
+  },
+  "summary": {
+    "mean_r2_across_groups": -0.1296,
+    "std_r2_across_groups": 0.0377,
+    "logo_r2_per_group": {
+      "侗族": -0.0793,
+      "藏族": -0.1701,
+      "蒙古族": -0.1393
+    },
+    "cv_5fold_r2": 0.1186,
+    "logo_vs_cv_gap": -0.2482
+  },
+  "DAP": {
+    "experiment": "EXP12_logo",
+    "total_checks": 6,
+    "passed": 1,
+    "warnings": 5,
+    "critical": 0,
+    "verdict": "⚠️ CAUTION: 多个警告，建议审查后再继续",
+    "checks": [
+      {
+        "name": "stability",
+        "passed": 0.0,
+        "metric": 0.290989,
+        "threshold": 0.15,
+        "message": "⚠️ 结果不稳定: CV=0.2910 >= 0.15, mean=-0.1296±0.0377",
+        "severity": "warning"
+      },
+      {
+        "name": "distribution_shift",
+        "passed": false,
+        "metric": 0.654545,
+        "threshold": 0.054545,
+        "message": "⚠️ 分布偏移: 36/55 特征偏移显著. Top3: [('feat_1', 'KS=1.000'), ('feat_2', 'KS=1.000'), ('feat_3', 'KS=1.000')]",
+        "severity": "warning"
+      },
+      {
+        "name": "distribution_shift",
+        "passed": false,
+        "metric": 0.690909,
+        "threshold": 0.054545,
+        "message": "⚠️ 分布偏移: 38/55 特征偏移显著. Top3: [('feat_0', 'KS=1.000'), ('feat_2', 'KS=1.000'), ('feat_6', 'KS=1.000')]",
+        "severity": "warning"
+      },
+      {
+        "name": "distribution_shift",
+        "passed": false,
+        "metric": 0.709091,
+        "threshold": 0.054545,
+        "message": "⚠️ 分布偏移: 39/55 特征偏移显著. Top3: [('feat_0', 'KS=1.000'), ('feat_1', 'KS=1.000'), ('feat_3', 'KS=1.000')]",
+        "severity": "warning"
+      },
+      {
+        "name": "permutation_baseline",
+        "passed": 1.0,
+        "metric": 19.432992935180664,
+        "threshold": 1.96,
+        "message": "模型显著优于置换基线: model=1.2685, perm=1.8274±0.0288, z=19.43",
+        "severity": "info"
+      },
+      {
+        "name": "effect_size",
+        "passed": false,
+        "metric": -0.129567,
+        "threshold": 0.02,
+        "message": "⚠️ 效应量过小: r 改善 -0.1296 < 2.0%, 可能无实际意义",
+        "severity": "warning"
+      }
+    ]
+  }
+}

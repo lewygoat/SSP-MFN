@@ -1,0 +1,231 @@
+{
+  "n_samples": 850,
+  "device": "mps",
+  "seeds": [
+    17,
+    42,
+    2024
+  ],
+  "C0_full": {
+    "r2_6_mean": 0.0183,
+    "r2_6_std": 0.0,
+    "r2_4_mean": 0.0158,
+    "r2_4_std": 0.0,
+    "rmse_6_mean": 1.2558,
+    "per_seed_r2_6": [
+      0.0183,
+      0.0183,
+      0.0183
+    ],
+    "per_seed_r2_4": [
+      0.0158,
+      0.0158,
+      0.0158
+    ],
+    "per_scale_last_seed": {
+      "ICS": {
+        "rmse": 1.2945,
+        "r2": -0.001,
+        "pearson_r": 0.0461,
+        "p": 0.17921238073068907
+      },
+      "IRI": {
+        "rmse": 1.2527,
+        "r2": -0.0134,
+        "pearson_r": -0.0471,
+        "p": 0.17015096479466896
+      },
+      "CSAS": {
+        "rmse": 1.2906,
+        "r2": 0.0575,
+        "pearson_r": 0.2451,
+        "p": 4.2755778221473723e-13
+      },
+      "SSCS": {
+        "rmse": 1.2671,
+        "r2": 0.02,
+        "pearson_r": 0.1453,
+        "p": 2.1262265642479463e-05
+      },
+      "IOS": {
+        "rmse": 1.2448,
+        "r2": 0.0004,
+        "pearson_r": 0.0586,
+        "p": 0.0876245621791886
+      },
+      "SCI2": {
+        "rmse": 1.1849,
+        "r2": 0.0463,
+        "pearson_r": 0.2208,
+        "p": 7.563230769631929e-11
+      }
+    }
+  },
+  "C1_shuffled": {
+    "r2_6_mean": 0.0067,
+    "r2_6_std": 0.0038,
+    "r2_4_mean": 0.0029,
+    "r2_4_std": 0.0029,
+    "rmse_6_mean": 1.2632,
+    "per_seed_r2_6": [
+      0.0091,
+      0.0013,
+      0.0097
+    ],
+    "per_seed_r2_4": [
+      0.0041,
+      -0.0012,
+      0.0057
+    ],
+    "per_scale_last_seed": {
+      "ICS": {
+        "rmse": 1.3041,
+        "r2": -0.0159,
+        "pearson_r": -0.0042,
+        "p": 0.9034840857003497
+      },
+      "IRI": {
+        "rmse": 1.2567,
+        "r2": -0.0199,
+        "pearson_r": -0.0304,
+        "p": 0.375361596722835
+      },
+      "CSAS": {
+        "rmse": 1.296,
+        "r2": 0.0497,
+        "pearson_r": 0.2294,
+        "p": 1.3018849492963246e-11
+      },
+      "SSCS": {
+        "rmse": 1.2743,
+        "r2": 0.0089,
+        "pearson_r": 0.1108,
+        "p": 0.0012098111332913188
+      },
+      "IOS": {
+        "rmse": 1.2505,
+        "r2": -0.0088,
+        "pearson_r": 0.0335,
+        "p": 0.3289548566755093
+      },
+      "SCI2": {
+        "rmse": 1.1863,
+        "r2": 0.044,
+        "pearson_r": 0.2105,
+        "p": 5.692838628586018e-10
+      }
+    }
+  },
+  "C2_zeroembed": {
+    "r2_6_mean": 0.0202,
+    "r2_6_std": 0.0,
+    "r2_4_mean": 0.0186,
+    "r2_4_std": 0.0,
+    "rmse_6_mean": 1.2545,
+    "per_seed_r2_6": [
+      0.0202,
+      0.0202,
+      0.0202
+    ],
+    "per_seed_r2_4": [
+      0.0186,
+      0.0186,
+      0.0186
+    ],
+    "per_scale_last_seed": {
+      "ICS": {
+        "rmse": 1.3002,
+        "r2": -0.0099,
+        "pearson_r": -0.0363,
+        "p": 0.2910599472069684
+      },
+      "IRI": {
+        "rmse": 1.2498,
+        "r2": -0.0088,
+        "pearson_r": -0.0569,
+        "p": 0.09762395863108397
+      },
+      "CSAS": {
+        "rmse": 1.2853,
+        "r2": 0.0652,
+        "pearson_r": 0.2605,
+        "p": 1.1862593181136737e-14
+      },
+      "SSCS": {
+        "rmse": 1.2621,
+        "r2": 0.0278,
+        "pearson_r": 0.1672,
+        "p": 9.447283840013825e-07
+      },
+      "IOS": {
+        "rmse": 1.2461,
+        "r2": -0.0017,
+        "pearson_r": 0.0322,
+        "p": 0.3477269043078214
+      },
+      "SCI2": {
+        "rmse": 1.1837,
+        "r2": 0.0483,
+        "pearson_r": 0.2201,
+        "p": 8.822216651451176e-11
+      }
+    }
+  },
+  "delta_vs_C0": {
+    "C1_vs_C0_r2_6": -0.0116,
+    "C1_vs_C0_r2_4": -0.0129,
+    "C2_vs_C0_r2_6": 0.0019,
+    "C2_vs_C0_r2_4": 0.0028
+  },
+  "DAP": {
+    "experiment": "EXP16_falsification",
+    "total_checks": 5,
+    "passed": 4,
+    "warnings": 1,
+    "critical": 0,
+    "verdict": "⚠️ PROCEED_WITH_CAUTION: 有轻微问题，可继续但需在论文中声明",
+    "checks": [
+      {
+        "name": "label_leakage",
+        "passed": true,
+        "metric": 0,
+        "threshold": 0,
+        "message": "无标签泄漏: 最大 |r|=0.2607 < 0.95",
+        "severity": "info"
+      },
+      {
+        "name": "stability",
+        "passed": true,
+        "metric": 0.0,
+        "threshold": 0.15,
+        "message": "结果稳定: CV=0.0000 < 0.15, mean=0.0183±0.0000",
+        "severity": "info"
+      },
+      {
+        "name": "overfit_ratio",
+        "passed": true,
+        "metric": 1.497586,
+        "threshold": 1.5,
+        "message": "过拟合可控: test/train=1.50 < 1.5",
+        "severity": "info"
+      },
+      {
+        "name": "distribution_shift",
+        "passed": false,
+        "metric": 0.309091,
+        "threshold": 0.054545,
+        "message": "⚠️ 分布偏移: 17/55 特征偏移显著. Top3: [('feat_5', 'KS=0.159'), ('feat_0', 'KS=0.157'), ('feat_1', 'KS=0.153')]",
+        "severity": "warning"
+      },
+      {
+        "name": "permutation_baseline",
+        "passed": true,
+        "metric": 19.87408447265625,
+        "threshold": 1.96,
+        "message": "模型显著优于置换基线: model=1.2558, perm=1.8274±0.0288, z=19.87",
+        "severity": "info"
+      }
+    ]
+  },
+  "elapsed_sec": 524.6
+}

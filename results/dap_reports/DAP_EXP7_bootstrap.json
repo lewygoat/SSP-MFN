@@ -1,0 +1,26 @@
+{
+  "experiment": "EXP7_bootstrap",
+  "total_checks": 2,
+  "passed": 1,
+  "warnings": 1,
+  "critical": 0,
+  "verdict": "⚠️ PROCEED_WITH_CAUTION: 有轻微问题，可继续但需在论文中声明",
+  "checks": [
+    {
+      "name": "stability",
+      "passed": false,
+      "metric": 0.628941,
+      "threshold": 0.15,
+      "message": "⚠️ 结果不稳定: CV=0.6289 >= 0.15, mean=0.0796±0.0501",
+      "severity": "warning"
+    },
+    {
+      "name": "permutation_baseline",
+      "passed": true,
+      "metric": 22.390545,
+      "threshold": 1.96,
+      "message": "模型显著优于置换基线: model=1.3476, perm=2.0982±0.0335, z=22.39",
+      "severity": "info"
+    }
+  ]
+}

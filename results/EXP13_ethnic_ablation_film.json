@@ -1,0 +1,284 @@
+{
+  "n_samples": 850,
+  "variants": {
+    "SSP_MFN_full": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3059,
+          "r2": -0.0188,
+          "r": -0.0218
+        },
+        "IRI": {
+          "rmse": 1.2506,
+          "r2": -0.0099,
+          "r": 0.0011
+        },
+        "CSAS": {
+          "rmse": 1.2959,
+          "r2": 0.0498,
+          "r": 0.2332
+        },
+        "SSCS": {
+          "rmse": 1.2704,
+          "r2": 0.0149,
+          "r": 0.1249
+        },
+        "IOS": {
+          "rmse": 1.2495,
+          "r2": -0.0072,
+          "r": 0.0333
+        },
+        "SCI2": {
+          "rmse": 1.1812,
+          "r2": 0.0522,
+          "r": 0.2301
+        },
+        "_mean": {
+          "rmse": 1.2589,
+          "r2": 0.0135,
+          "r": 0.1001
+        }
+      },
+      "train_loss": 0.32807861189950593,
+      "test_loss": 0.41323486566543577
+    },
+    "No_AdaIN": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3007,
+          "r2": -0.0106,
+          "r": -0.0489
+        },
+        "IRI": {
+          "rmse": 1.2499,
+          "r2": -0.0089,
+          "r": -0.0071
+        },
+        "CSAS": {
+          "rmse": 1.2913,
+          "r2": 0.0565,
+          "r": 0.245
+        },
+        "SSCS": {
+          "rmse": 1.2556,
+          "r2": 0.0378,
+          "r": 0.1979
+        },
+        "IOS": {
+          "rmse": 1.2531,
+          "r2": -0.013,
+          "r": -0.0133
+        },
+        "SCI2": {
+          "rmse": 1.1847,
+          "r2": 0.0466,
+          "r": 0.2163
+        },
+        "_mean": {
+          "rmse": 1.2559,
+          "r2": 0.0181,
+          "r": 0.0983
+        }
+      },
+      "train_loss": 0.3322879133983092,
+      "test_loss": 0.4114867051442464
+    },
+    "No_Gate": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3064,
+          "r2": -0.0195,
+          "r": -0.0366
+        },
+        "IRI": {
+          "rmse": 1.2528,
+          "r2": -0.0135,
+          "r": -0.0315
+        },
+        "CSAS": {
+          "rmse": 1.2958,
+          "r2": 0.0499,
+          "r": 0.2332
+        },
+        "SSCS": {
+          "rmse": 1.2728,
+          "r2": 0.0112,
+          "r": 0.1074
+        },
+        "IOS": {
+          "rmse": 1.2492,
+          "r2": -0.0066,
+          "r": 0.0328
+        },
+        "SCI2": {
+          "rmse": 1.1816,
+          "r2": 0.0517,
+          "r": 0.2278
+        },
+        "_mean": {
+          "rmse": 1.2598,
+          "r2": 0.0122,
+          "r": 0.0888
+        }
+      },
+      "train_loss": 0.3358057170835408,
+      "test_loss": 0.4135606249173482
+    },
+    "No_AdaIN_No_Gate": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3033,
+          "r2": -0.0147,
+          "r": -0.0599
+        },
+        "IRI": {
+          "rmse": 1.2496,
+          "r2": -0.0083,
+          "r": -0.0161
+        },
+        "CSAS": {
+          "rmse": 1.2885,
+          "r2": 0.0606,
+          "r": 0.2487
+        },
+        "SSCS": {
+          "rmse": 1.2687,
+          "r2": 0.0176,
+          "r": 0.1342
+        },
+        "IOS": {
+          "rmse": 1.2526,
+          "r2": -0.0122,
+          "r": -0.0019
+        },
+        "SCI2": {
+          "rmse": 1.1855,
+          "r2": 0.0454,
+          "r": 0.2133
+        },
+        "_mean": {
+          "rmse": 1.258,
+          "r2": 0.0147,
+          "r": 0.0864
+        }
+      },
+      "train_loss": 0.3464121748100628,
+      "test_loss": 0.41278852224349977
+    },
+    "FiLM_replace": {
+      "metrics": {
+        "ICS": {
+          "rmse": 1.3051,
+          "r2": -0.0175,
+          "r": -0.0582
+        },
+        "IRI": {
+          "rmse": 1.2471,
+          "r2": -0.0044,
+          "r": 0.0122
+        },
+        "CSAS": {
+          "rmse": 1.2903,
+          "r2": 0.058,
+          "r": 0.2473
+        },
+        "SSCS": {
+          "rmse": 1.2599,
+          "r2": 0.0313,
+          "r": 0.1848
+        },
+        "IOS": {
+          "rmse": 1.2483,
+          "r2": -0.0052,
+          "r": 0.0361
+        },
+        "SCI2": {
+          "rmse": 1.1832,
+          "r2": 0.049,
+          "r": 0.2231
+        },
+        "_mean": {
+          "rmse": 1.2556,
+          "r2": 0.0185,
+          "r": 0.1075
+        }
+      },
+      "train_loss": 0.3287643953615969,
+      "test_loss": 0.4110409915447235
+    }
+  },
+  "DAP": {
+    "experiment": "EXP13_ethnic_ablation",
+    "total_checks": 8,
+    "passed": 6,
+    "warnings": 2,
+    "critical": 0,
+    "verdict": "⚠️ PROCEED_WITH_CAUTION: 有轻微问题，可继续但需在论文中声明",
+    "checks": [
+      {
+        "name": "overfit_ratio",
+        "passed": true,
+        "metric": 1.259561,
+        "threshold": 1.5,
+        "message": "过拟合可控: test/train=1.26 < 1.5",
+        "severity": "info"
+      },
+      {
+        "name": "overfit_ratio",
+        "passed": true,
+        "metric": 1.238344,
+        "threshold": 1.5,
+        "message": "过拟合可控: test/train=1.24 < 1.5",
+        "severity": "info"
+      },
+      {
+        "name": "overfit_ratio",
+        "passed": true,
+        "metric": 1.231547,
+        "threshold": 1.5,
+        "message": "过拟合可控: test/train=1.23 < 1.5",
+        "severity": "info"
+      },
+      {
+        "name": "overfit_ratio",
+        "passed": true,
+        "metric": 1.191611,
+        "threshold": 1.5,
+        "message": "过拟合可控: test/train=1.19 < 1.5",
+        "severity": "info"
+      },
+      {
+        "name": "overfit_ratio",
+        "passed": true,
+        "metric": 1.25026,
+        "threshold": 1.5,
+        "message": "过拟合可控: test/train=1.25 < 1.5",
+        "severity": "info"
+      },
+      {
+        "name": "stability",
+        "passed": 0.0,
+        "metric": 0.162312,
+        "threshold": 0.15,
+        "message": "⚠️ 结果不稳定: CV=0.1623 >= 0.15, mean=0.0154±0.0025",
+        "severity": "warning"
+      },
+      {
+        "name": "permutation_baseline",
+        "passed": 1.0,
+        "metric": 19.76630210876465,
+        "threshold": 1.96,
+        "message": "模型显著优于置换基线: model=1.2589, perm=1.8274±0.0288, z=19.77",
+        "severity": "info"
+      },
+      {
+        "name": "multiple_comparisons",
+        "passed": 0.0,
+        "metric": 0.0,
+        "threshold": 1,
+        "message": "⚠️ 多重比较校正后无显著结果 (Bonferroni (α=0.0100)), 原始 p: [nan, nan, nan, nan, nan]",
+        "severity": "warning"
+      }
+    ]
+  }
+}

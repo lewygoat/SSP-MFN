@@ -1,0 +1,26 @@
+{
+  "experiment": "EXP1b_snr_sweep",
+  "total_checks": 2,
+  "passed": 2,
+  "warnings": 0,
+  "critical": 0,
+  "verdict": "✓ PASS: 所有检查通过，可安全继续",
+  "checks": [
+    {
+      "name": "stability",
+      "passed": true,
+      "metric": 0.086388,
+      "threshold": 0.15,
+      "message": "结果稳定: CV=0.0864 < 0.15, mean=1.4378±0.1242",
+      "severity": "info"
+    },
+    {
+      "name": "permutation_baseline",
+      "passed": true,
+      "metric": 19.98675537109375,
+      "threshold": 1.96,
+      "message": "模型显著优于置换基线: model=1.3891, perm=2.0171±0.0314, z=19.99",
+      "severity": "info"
+    }
+  ]
+}

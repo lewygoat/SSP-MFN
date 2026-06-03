@@ -1,0 +1,18 @@
+{
+  "experiment": "EXP5_gate_weights",
+  "total_checks": 1,
+  "passed": 0,
+  "warnings": 1,
+  "critical": 0,
+  "verdict": "⚠️ PROCEED_WITH_CAUTION: 有轻微问题，可继续但需在论文中声明",
+  "checks": [
+    {
+      "name": "stability",
+      "passed": false,
+      "metric": 0.480464,
+      "threshold": 0.15,
+      "message": "⚠️ 结果不稳定: CV=0.4805 >= 0.15, mean=0.1662±0.0798",
+      "severity": "warning"
+    }
+  ]
+}

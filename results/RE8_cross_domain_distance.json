@@ -1,0 +1,67 @@
+{
+  "input": "MERT-v1-95M 768-D embeddings from 1950 real 30s clips",
+  "metric": "MMD (RBF, sigma=median pairwise) + Euclidean center distance",
+  "sample_per_group": 80,
+  "corpus_distance_summary": {
+    "max_mmd_pair": {
+      "pair": [
+        "BaiDabenquCorpus",
+        "MongolianYT"
+      ]
+    },
+    "mean_offdiag_mmd": 0.3469
+  },
+  "ethnic_distance_summary": {
+    "mean_offdiag_mmd": 0.3463
+  },
+  "within_group_cosine_spread": {
+    "corpus": {
+      "BaiDabenquCorpus": 0.0172,
+      "CCMUSIC_DATABASE": 0.1345,
+      "ChoralSingingDataset": 0.1352,
+      "DongTibetanYT": 0.1562,
+      "MongolianYT": 0.1393
+    },
+    "ethnic": {
+      "bai": 0.0173,
+      "dong": 0.1583,
+      "han_chinese": 0.1272,
+      "mongolian": 0.1371,
+      "non-ethnic_western_choral": 0.1332,
+      "tibetan": 0.0968
+    }
+  },
+  "han_to_minority_domain_gap": {
+    "min_ethnic_distance_mean": 0.2944,
+    "per_minority": {
+      "bai": 0.4221,
+      "dong": 0.2014,
+      "mongolian": 0.3182,
+      "tibetan": 0.2358
+    }
+  },
+  "west_to_minority_domain_gap": {
+    "west_to_minority_mean": 0.3379,
+    "per_minority": {
+      "bai": 0.4116,
+      "dong": 0.2575,
+      "mongolian": 0.3996,
+      "tibetan": 0.2829
+    }
+  },
+  "corpora_present": [
+    "BaiDabenquCorpus",
+    "CCMUSIC_DATABASE",
+    "ChoralSingingDataset",
+    "DongTibetanYT",
+    "MongolianYT"
+  ],
+  "ethnic_groups_present": [
+    "bai",
+    "dong",
+    "han_chinese",
+    "mongolian",
+    "non-ethnic_western_choral",
+    "tibetan"
+  ]
+}

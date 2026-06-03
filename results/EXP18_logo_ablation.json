@@ -1,0 +1,413 @@
+{
+  "n_samples": 850,
+  "device": "mps",
+  "variants": {
+    "M3_no_adain": {
+      "config": {
+        "use_adain": false,
+        "use_gate": true
+      },
+      "per_group": {
+        "侗族": {
+          "n_train": 567,
+          "n_test": 283,
+          "metrics": {
+            "ICS": {
+              "rmse": 1.3613,
+              "r2": -0.0015,
+              "r": -0.0549
+            },
+            "IRI": {
+              "rmse": 1.3397,
+              "r2": -0.0066,
+              "r": -0.0663
+            },
+            "CSAS": {
+              "rmse": 1.3247,
+              "r2": -0.1368,
+              "r": -0.0241
+            },
+            "SSCS": {
+              "rmse": 1.2725,
+              "r2": -0.015,
+              "r": -0.0024
+            },
+            "IOS": {
+              "rmse": 1.2207,
+              "r2": -0.0049,
+              "r": 0.0276
+            },
+            "SCI2": {
+              "rmse": 1.1953,
+              "r2": -0.0956,
+              "r": -0.1001
+            },
+            "_mean": {
+              "rmse": 1.2857,
+              "r2": -0.0434,
+              "r": -0.0367
+            }
+          }
+        },
+        "藏族": {
+          "n_train": 589,
+          "n_test": 261,
+          "metrics": {
+            "ICS": {
+              "rmse": 1.3319,
+              "r2": -0.0041,
+              "r": 0.0354
+            },
+            "IRI": {
+              "rmse": 1.1769,
+              "r2": -0.007,
+              "r": -0.0219
+            },
+            "CSAS": {
+              "rmse": 1.3986,
+              "r2": -0.1166,
+              "r": -0.0348
+            },
+            "SSCS": {
+              "rmse": 1.2997,
+              "r2": 0.0663,
+              "r": 0.2966
+            },
+            "IOS": {
+              "rmse": 1.2351,
+              "r2": 0.0005,
+              "r": 0.0428
+            },
+            "SCI2": {
+              "rmse": 1.372,
+              "r2": -0.2694,
+              "r": -0.0161
+            },
+            "_mean": {
+              "rmse": 1.3024,
+              "r2": -0.055,
+              "r": 0.0503
+            }
+          }
+        },
+        "蒙古族": {
+          "n_train": 544,
+          "n_test": 306,
+          "metrics": {
+            "ICS": {
+              "rmse": 1.1965,
+              "r2": -0.003,
+              "r": -0.0643
+            },
+            "IRI": {
+              "rmse": 1.2143,
+              "r2": 0.0026,
+              "r": 0.0914
+            },
+            "CSAS": {
+              "rmse": 1.4647,
+              "r2": -0.2979,
+              "r": -0.038
+            },
+            "SSCS": {
+              "rmse": 1.234,
+              "r2": 0.0007,
+              "r": 0.0282
+            },
+            "IOS": {
+              "rmse": 1.2936,
+              "r2": -0.0315,
+              "r": -0.1159
+            },
+            "SCI2": {
+              "rmse": 1.2046,
+              "r2": -0.033,
+              "r": 0.0403
+            },
+            "_mean": {
+              "rmse": 1.268,
+              "r2": -0.0604,
+              "r": -0.0097
+            }
+          }
+        }
+      },
+      "summary": {
+        "mean_r2": -0.0529,
+        "std_r2": 0.0071,
+        "per_group_r2": {
+          "侗族": -0.0434,
+          "藏族": -0.055,
+          "蒙古族": -0.0604
+        }
+      },
+      "DAP": {
+        "experiment": "EXP18_M3_no_adain",
+        "total_checks": 6,
+        "passed": 2,
+        "warnings": 4,
+        "critical": 0,
+        "verdict": "⚠️ CAUTION: 多个警告，建议审查后再继续",
+        "checks": [
+          {
+            "name": "stability",
+            "passed": 1.0,
+            "metric": 0.133987,
+            "threshold": 0.5,
+            "message": "结果稳定: CV=0.1340 < 0.5, mean=-0.0529±0.0071",
+            "severity": "info"
+          },
+          {
+            "name": "distribution_shift",
+            "passed": false,
+            "metric": 0.654545,
+            "threshold": 0.054545,
+            "message": "⚠️ 分布偏移: 36/55 特征偏移显著. Top3: [('feat_1', 'KS=1.000'), ('feat_2', 'KS=1.000'), ('feat_3', 'KS=1.000')]",
+            "severity": "warning"
+          },
+          {
+            "name": "distribution_shift",
+            "passed": false,
+            "metric": 0.690909,
+            "threshold": 0.054545,
+            "message": "⚠️ 分布偏移: 38/55 特征偏移显著. Top3: [('feat_0', 'KS=1.000'), ('feat_2', 'KS=1.000'), ('feat_6', 'KS=1.000')]",
+            "severity": "warning"
+          },
+          {
+            "name": "distribution_shift",
+            "passed": false,
+            "metric": 0.709091,
+            "threshold": 0.054545,
+            "message": "⚠️ 分布偏移: 39/55 特征偏移显著. Top3: [('feat_0', 'KS=1.000'), ('feat_1', 'KS=1.000'), ('feat_3', 'KS=1.000')]",
+            "severity": "warning"
+          },
+          {
+            "name": "permutation_baseline",
+            "passed": 1.0,
+            "metric": 19.432992935180664,
+            "threshold": 1.96,
+            "message": "模型显著优于置换基线: model=1.2685, perm=1.8274±0.0288, z=19.43",
+            "severity": "info"
+          },
+          {
+            "name": "effect_size",
+            "passed": false,
+            "metric": -0.052933,
+            "threshold": 0.02,
+            "message": "⚠️ 效应量过小: r 改善 -0.0529 < 2.0%, 可能无实际意义",
+            "severity": "warning"
+          }
+        ]
+      }
+    },
+    "M4_plain": {
+      "config": {
+        "use_adain": false,
+        "use_gate": false
+      },
+      "per_group": {
+        "侗族": {
+          "n_train": 567,
+          "n_test": 283,
+          "metrics": {
+            "ICS": {
+              "rmse": 1.362,
+              "r2": -0.0024,
+              "r": -0.0457
+            },
+            "IRI": {
+              "rmse": 1.3394,
+              "r2": -0.0061,
+              "r": -0.0851
+            },
+            "CSAS": {
+              "rmse": 1.3616,
+              "r2": -0.201,
+              "r": -0.0206
+            },
+            "SSCS": {
+              "rmse": 1.2648,
+              "r2": -0.0027,
+              "r": 0.0044
+            },
+            "IOS": {
+              "rmse": 1.2208,
+              "r2": -0.005,
+              "r": 0.0348
+            },
+            "SCI2": {
+              "rmse": 1.2113,
+              "r2": -0.1252,
+              "r": -0.1009
+            },
+            "_mean": {
+              "rmse": 1.2933,
+              "r2": -0.0571,
+              "r": -0.0355
+            }
+          }
+        },
+        "藏族": {
+          "n_train": 589,
+          "n_test": 261,
+          "metrics": {
+            "ICS": {
+              "rmse": 1.3319,
+              "r2": -0.0041,
+              "r": 0.07
+            },
+            "IRI": {
+              "rmse": 1.1712,
+              "r2": 0.0027,
+              "r": 0.0617
+            },
+            "CSAS": {
+              "rmse": 1.3656,
+              "r2": -0.0645,
+              "r": -0.0308
+            },
+            "SSCS": {
+              "rmse": 1.3392,
+              "r2": 0.0086,
+              "r": 0.1777
+            },
+            "IOS": {
+              "rmse": 1.2354,
+              "r2": -0.0,
+              "r": 0.0668
+            },
+            "SCI2": {
+              "rmse": 1.372,
+              "r2": -0.2693,
+              "r": 0.0209
+            },
+            "_mean": {
+              "rmse": 1.3025,
+              "r2": -0.0544,
+              "r": 0.0611
+            }
+          }
+        },
+        "蒙古族": {
+          "n_train": 544,
+          "n_test": 306,
+          "metrics": {
+            "ICS": {
+              "rmse": 1.197,
+              "r2": -0.004,
+              "r": -0.0502
+            },
+            "IRI": {
+              "rmse": 1.2135,
+              "r2": 0.004,
+              "r": 0.0867
+            },
+            "CSAS": {
+              "rmse": 1.4516,
+              "r2": -0.2749,
+              "r": -0.0352
+            },
+            "SSCS": {
+              "rmse": 1.2361,
+              "r2": -0.0027,
+              "r": -0.008
+            },
+            "IOS": {
+              "rmse": 1.3014,
+              "r2": -0.0439,
+              "r": -0.1122
+            },
+            "SCI2": {
+              "rmse": 1.2041,
+              "r2": -0.0321,
+              "r": 0.0276
+            },
+            "_mean": {
+              "rmse": 1.2673,
+              "r2": -0.0589,
+              "r": -0.0152
+            }
+          }
+        }
+      },
+      "summary": {
+        "mean_r2": -0.0568,
+        "std_r2": 0.0018,
+        "per_group_r2": {
+          "侗族": -0.0571,
+          "藏族": -0.0544,
+          "蒙古族": -0.0589
+        }
+      },
+      "DAP": {
+        "experiment": "EXP18_M4_plain",
+        "total_checks": 6,
+        "passed": 2,
+        "warnings": 4,
+        "critical": 0,
+        "verdict": "⚠️ CAUTION: 多个警告，建议审查后再继续",
+        "checks": [
+          {
+            "name": "stability",
+            "passed": 1.0,
+            "metric": 0.032559,
+            "threshold": 0.5,
+            "message": "结果稳定: CV=0.0326 < 0.5, mean=-0.0568±0.0018",
+            "severity": "info"
+          },
+          {
+            "name": "distribution_shift",
+            "passed": false,
+            "metric": 0.654545,
+            "threshold": 0.054545,
+            "message": "⚠️ 分布偏移: 36/55 特征偏移显著. Top3: [('feat_1', 'KS=1.000'), ('feat_2', 'KS=1.000'), ('feat_3', 'KS=1.000')]",
+            "severity": "warning"
+          },
+          {
+            "name": "distribution_shift",
+            "passed": false,
+            "metric": 0.690909,
+            "threshold": 0.054545,
+            "message": "⚠️ 分布偏移: 38/55 特征偏移显著. Top3: [('feat_0', 'KS=1.000'), ('feat_2', 'KS=1.000'), ('feat_6', 'KS=1.000')]",
+            "severity": "warning"
+          },
+          {
+            "name": "distribution_shift",
+            "passed": false,
+            "metric": 0.709091,
+            "threshold": 0.054545,
+            "message": "⚠️ 分布偏移: 39/55 特征偏移显著. Top3: [('feat_0', 'KS=1.000'), ('feat_1', 'KS=1.000'), ('feat_3', 'KS=1.000')]",
+            "severity": "warning"
+          },
+          {
+            "name": "permutation_baseline",
+            "passed": 1.0,
+            "metric": 19.432992935180664,
+            "threshold": 1.96,
+            "message": "模型显著优于置换基线: model=1.2685, perm=1.8274±0.0288, z=19.43",
+            "severity": "info"
+          },
+          {
+            "name": "effect_size",
+            "passed": false,
+            "metric": -0.0568,
+            "threshold": 0.02,
+            "message": "⚠️ 效应量过小: r 改善 -0.0568 < 2.0%, 可能无实际意义",
+            "severity": "warning"
+          }
+        ]
+      }
+    },
+    "M1_full_reference": {
+      "mean_r2_across_groups": -0.1296,
+      "std_r2_across_groups": 0.0377,
+      "logo_r2_per_group": {
+        "侗族": -0.0793,
+        "藏族": -0.1701,
+        "蒙古族": -0.1393
+      },
+      "cv_5fold_r2": 0.1186,
+      "logo_vs_cv_gap": -0.2482
+    }
+  }
+}

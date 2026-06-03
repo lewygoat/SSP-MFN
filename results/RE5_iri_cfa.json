@@ -1,0 +1,94 @@
+{
+  "n_subjects": 1973,
+  "instrument": "Davis 1980 IRI 28-item, 0-4 Likert (reverse-coded)",
+  "data_source": "Zenodo 14748430 / CC-BY-4.0",
+  "cronbach_alpha_by_subscale": {
+    "PT": 0.2824,
+    "FS": 0.4041,
+    "EC": -0.1254,
+    "PD": 0.3114
+  },
+  "subscale_correlation_empirical": {
+    "PT": {
+      "PT": 1.0,
+      "FS": 0.2615,
+      "EC": 0.2697,
+      "PD": 0.1903
+    },
+    "FS": {
+      "PT": 0.2615,
+      "FS": 1.0,
+      "EC": 0.2675,
+      "PD": 0.2865
+    },
+    "EC": {
+      "PT": 0.2697,
+      "FS": 0.2675,
+      "EC": 1.0,
+      "PD": 0.2588
+    },
+    "PD": {
+      "PT": 0.1903,
+      "FS": 0.2865,
+      "EC": 0.2588,
+      "PD": 1.0
+    }
+  },
+  "subscale_correlation_anchor_reported": {
+    "PT": {
+      "PT": 1.0,
+      "FS": 0.2615,
+      "EC": 0.2697,
+      "PD": 0.1903
+    },
+    "FS": {
+      "PT": 0.2615,
+      "FS": 1.0,
+      "EC": 0.2675,
+      "PD": 0.2865
+    },
+    "EC": {
+      "PT": 0.2697,
+      "FS": 0.2675,
+      "EC": 1.0,
+      "PD": 0.2588
+    },
+    "PD": {
+      "PT": 0.1903,
+      "FS": 0.2865,
+      "EC": 0.2588,
+      "PD": 1.0
+    }
+  },
+  "cfa_fit_indices": {
+    "DoF": 344.0,
+    "DoF Baseline": 378.0,
+    "chi2": 2704.6235059862474,
+    "chi2 p-value": 0.0,
+    "chi2 Baseline": 11548.649197089428,
+    "CFI": 0.7886762475182445,
+    "GFI": 0.7658060730888002,
+    "AGFI": 0.7426589989173444,
+    "NFI": 0.7658060730888001,
+    "TLI": 0.7677895975636523,
+    "RMSEA": 0.0589903111723564,
+    "AIC": 121.25836441359732,
+    "BIC": 467.67161578699944,
+    "LogLik": 1.370817793201342
+  },
+  "thresholds_reference": {
+    "alpha_min": 0.7,
+    "CFI_min": 0.9,
+    "RMSEA_max": 0.08,
+    "SRMR_max": 0.08
+  },
+  "interpretation": {
+    "alpha_pass": {
+      "PT": false,
+      "FS": false,
+      "EC": false,
+      "PD": false
+    },
+    "cfa_run": true
+  }
+}

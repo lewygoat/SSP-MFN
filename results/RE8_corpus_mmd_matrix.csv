@@ -1,0 +1,6 @@
+,BaiDabenquCorpus,CCMUSIC_DATABASE,ChoralSingingDataset,DongTibetanYT,MongolianYT
+BaiDabenquCorpus,0.0,0.4185,0.414,0.5277,0.7019
+CCMUSIC_DATABASE,0.4185,0.0,0.1173,0.1629,0.311
+ChoralSingingDataset,0.414,0.1173,0.0,0.2247,0.4005
+DongTibetanYT,0.5277,0.1629,0.2247,0.0,0.1905
+MongolianYT,0.7019,0.311,0.4005,0.1905,0.0

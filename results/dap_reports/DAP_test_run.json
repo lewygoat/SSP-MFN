@@ -1,0 +1,50 @@
+{
+  "experiment": "test_run",
+  "total_checks": 5,
+  "passed": 5,
+  "warnings": 0,
+  "critical": 0,
+  "verdict": "✓ PASS: 所有检查通过，可安全继续",
+  "checks": [
+    {
+      "name": "overfit_ratio",
+      "passed": true,
+      "metric": 1.4,
+      "threshold": 1.5,
+      "message": "过拟合可控: test/train=1.40 < 1.5",
+      "severity": "info"
+    },
+    {
+      "name": "distribution_shift",
+      "passed": true,
+      "metric": 0.1,
+      "threshold": 0.3,
+      "message": "分布偏移可控: 1/10 特征有显著偏移",
+      "severity": "info"
+    },
+    {
+      "name": "label_leakage",
+      "passed": true,
+      "metric": 0,
+      "threshold": 0,
+      "message": "无标签泄漏: 最大 |r|=0.1521 < 0.95",
+      "severity": "info"
+    },
+    {
+      "name": "stability",
+      "passed": true,
+      "metric": 0.03266,
+      "threshold": 0.15,
+      "message": "结果稳定: CV=0.0327 < 0.15, mean=0.5000±0.0163",
+      "severity": "info"
+    },
+    {
+      "name": "permutation_baseline",
+      "passed": true,
+      "metric": 7.660937,
+      "threshold": 1.96,
+      "message": "模型显著优于置换基线: model=0.7000, perm=1.3736±0.0879, z=7.66",
+      "severity": "info"
+    }
+  ]
+}

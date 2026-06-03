@@ -1,0 +1,142 @@
+{
+  "data_setup": {
+    "training_data_origin": "real_collected_v2 + real_public Empathy IRI",
+    "audio_input": "real 1950-clip ethnic-pooled handcrafted (librosa) features",
+    "text_input": "placeholder noise (无真实捆绑歌词数据, 论文必须明示)",
+    "tab_input": "demographic + 6维pre量表 = 17 dim",
+    "real_data_flag": true,
+    "purpose": "pipeline_validation_only_not_real_intervention_result"
+  },
+  "CMAFNet_full": {
+    "ICS": {
+      "mae_mean": 1.8363,
+      "mae_std": 0.2157,
+      "r2_mean": 0.5408,
+      "pearson_r_mean": 0.7788,
+      "baseline_mae_mean": 2.775
+    },
+    "IRI": {
+      "mae_mean": 1.6012,
+      "mae_std": 0.1113,
+      "r2_mean": 0.269,
+      "pearson_r_mean": 0.5427,
+      "baseline_mae_mean": 1.9122
+    },
+    "CSAS": {
+      "mae_mean": 2.2272,
+      "mae_std": 0.1626,
+      "r2_mean": 0.1713,
+      "pearson_r_mean": 0.4379,
+      "baseline_mae_mean": 2.4251
+    },
+    "SSCS": {
+      "mae_mean": 2.1834,
+      "mae_std": 0.0844,
+      "r2_mean": 0.178,
+      "pearson_r_mean": 0.4379,
+      "baseline_mae_mean": 2.4273
+    },
+    "IOS": {
+      "mae_mean": 1.8604,
+      "mae_std": 0.1595,
+      "r2_mean": 0.5356,
+      "pearson_r_mean": 0.7649,
+      "baseline_mae_mean": 2.7522
+    },
+    "SCI2": {
+      "mae_mean": 1.6088,
+      "mae_std": 0.0619,
+      "r2_mean": 0.2568,
+      "pearson_r_mean": 0.5265,
+      "baseline_mae_mean": 1.8951
+    }
+  },
+  "CMAFNet_noAdain": {
+    "ICS": {
+      "mae_mean": 1.6269,
+      "mae_std": 0.1772,
+      "r2_mean": 0.6293,
+      "pearson_r_mean": 0.8202,
+      "baseline_mae_mean": 2.775
+    },
+    "IRI": {
+      "mae_mean": 1.5322,
+      "mae_std": 0.0999,
+      "r2_mean": 0.3204,
+      "pearson_r_mean": 0.5878,
+      "baseline_mae_mean": 1.9122
+    },
+    "CSAS": {
+      "mae_mean": 2.2318,
+      "mae_std": 0.1606,
+      "r2_mean": 0.1777,
+      "pearson_r_mean": 0.4354,
+      "baseline_mae_mean": 2.4251
+    },
+    "SSCS": {
+      "mae_mean": 2.149,
+      "mae_std": 0.1239,
+      "r2_mean": 0.2012,
+      "pearson_r_mean": 0.4527,
+      "baseline_mae_mean": 2.4273
+    },
+    "IOS": {
+      "mae_mean": 1.682,
+      "mae_std": 0.1546,
+      "r2_mean": 0.6071,
+      "pearson_r_mean": 0.7974,
+      "baseline_mae_mean": 2.7522
+    },
+    "SCI2": {
+      "mae_mean": 1.5282,
+      "mae_std": 0.146,
+      "r2_mean": 0.3241,
+      "pearson_r_mean": 0.58,
+      "baseline_mae_mean": 1.8951
+    }
+  },
+  "CMAFNet_noAttn": {
+    "ICS": {
+      "mae_mean": 2.0167,
+      "mae_std": 0.0758,
+      "r2_mean": 0.4402,
+      "pearson_r_mean": 0.6952,
+      "baseline_mae_mean": 2.775
+    },
+    "IRI": {
+      "mae_mean": 1.5567,
+      "mae_std": 0.1445,
+      "r2_mean": 0.3081,
+      "pearson_r_mean": 0.5777,
+      "baseline_mae_mean": 1.9122
+    },
+    "CSAS": {
+      "mae_mean": 2.2312,
+      "mae_std": 0.1328,
+      "r2_mean": 0.1781,
+      "pearson_r_mean": 0.4408,
+      "baseline_mae_mean": 2.4251
+    },
+    "SSCS": {
+      "mae_mean": 2.1702,
+      "mae_std": 0.0742,
+      "r2_mean": 0.171,
+      "pearson_r_mean": 0.4303,
+      "baseline_mae_mean": 2.4273
+    },
+    "IOS": {
+      "mae_mean": 2.0443,
+      "mae_std": 0.0378,
+      "r2_mean": 0.4224,
+      "pearson_r_mean": 0.672,
+      "baseline_mae_mean": 2.7522
+    },
+    "SCI2": {
+      "mae_mean": 1.601,
+      "mae_std": 0.0515,
+      "r2_mean": 0.2571,
+      "pearson_r_mean": 0.5278,
+      "baseline_mae_mean": 1.8951
+    }
+  }
+}

@@ -1,0 +1,68 @@
+[EXP-17] Primary-pipeline falsification · device=mps · DATA_DIR=数据v2
+  S=1.5, σ=0.3, int_ratio=0.7
+  N=850, audio=30, meta=11, part=14
+
+[DAP-1] label leakage scan...
+  无标签泄漏: 最大 |r|=0.2955 < 0.95
+
+[C0_full] true ethnic labels, full AdaIN, 3 seeds × 5-fold...
+  seed=17: R²_6=0.1182
+  seed=42: R²_6=0.1186
+  seed=2024: R²_6=0.1157
+
+[C1_shuffled] permuted ethnic labels (frequency-preserving), 3 seeds...
+  seed=17: R²_6=0.0130
+  seed=42: R²_6=0.0062
+  seed=2024: R²_6=0.0068
+
+[C2_zeroembed] frozen-zero embedding + trainable affine, 3 seeds...
+  seed=17: R²_6=0.0322
+  seed=42: R²_6=0.0392
+  seed=2024: R²_6=0.0438
+  [partial save] → /Volumes/拓展盘/安联的扫地僧/SCI/计算机交叉/基于⺠族⾳乐交流的社会技能提升预测/实验/results/EXP17_falsification_primary.json
+
+[DAP-2] stability across seeds (C0)...
+  结果稳定: CV=0.0109 < 0.15, mean=0.1175±0.0013
+
+[DAP-3] overfit on fold-0 (train vs test RMSE)...
+  过拟合可控: test/train=1.46 < 1.5
+
+[DAP-4] train/test distribution shift (fold-0)...
+  ⚠️ 分布偏移: 17/55 特征偏移显著. Top3: [('feat_5', 'KS=0.159'), ('feat_0', 'KS=0.157'), ('feat_1', 'KS=0.153')]
+
+[DAP-5] permutation baseline (random labels)...
+  模型显著优于置换基线: model=1.3269, perm=2.0982±0.0335, z=23.01
+
+============================================================
+  防御性分析报告: EXP17_falsification_primary
+============================================================
+  ✓ [label_leakage] 无标签泄漏: 最大 |r|=0.2955 < 0.95
+  ✓ [stability] 结果稳定: CV=0.0109 < 0.15, mean=0.1175±0.0013
+  ✓ [overfit_ratio] 过拟合可控: test/train=1.46 < 1.5
+  ⚠️ [distribution_shift] ⚠️ 分布偏移: 17/55 特征偏移显著. Top3: [('feat_5', 'KS=0.159'), ('feat_0', 'KS=0.157'), ('feat_1', 'KS=0.153')]
+  ✓ [permutation_baseline] 模型显著优于置换基线: model=1.3269, perm=2.0982±0.0335, z=23.01
+
+  总结: 4/5 通过, 1 警告, 0 严重
+  判定: ⚠️ PROCEED_WITH_CAUTION: 有轻微问题，可继续但需在论文中声明
+============================================================
+
+
+saved → /Volumes/拓展盘/安联的扫地僧/SCI/计算机交叉/基于⺠族⾳乐交流的社会技能提升预测/实验/results/EXP17_falsification_primary.json
+
+==============================================================================
+  EXP-17 Primary-Pipeline Falsification Controls Summary
+==============================================================================
+  Variant                R²_6 (mean±std)        R²_4 (mean±std)        ΔR²_6     
+  ---------------------------------------------------------------------------
+  C0_full (reference)    0.1175±0.0013     0.1192±0.0007     +0.0000
+  C1_shuffled labels     0.0087±0.0031     0.0049±0.0010     -0.1088
+  C2_zero-embedding      0.0384±0.0048     0.0415±0.0035     -0.0791
+==============================================================================
+
+  C1 − C0 (shuffled vs true): R²_6 Δ=-0.1088, R²_4 Δ=-0.1143
+  C2 − C0 (zero-emb vs true): R²_6 Δ=-0.0791, R²_4 Δ=-0.0777
+  elapsed: 549.5s
+
+Interpretation rule:
+  • C1 显著低于 C0 AND C2 显著低于 C0  → AdaIN 增益归因于 group-conditional 信号
+  • C1 ≈ C0 OR C2 ≈ C0                  → 增益主要来自参数容量

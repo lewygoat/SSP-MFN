@@ -1,0 +1,122 @@
+{
+  "descriptive": {
+    "n_records": 781,
+    "n_unique": {
+      "corpus": 7,
+      "country": 4,
+      "ethnic_group": 7,
+      "language": 19,
+      "genre": 31,
+      "region": 18,
+      "artist": 185,
+      "ritual_function": 125
+    }
+  },
+  "chi2_independence_tests": {
+    "corpus_x_ethnic": {
+      "chi2": 3905.0,
+      "p": 0.0,
+      "dof": 36,
+      "n": 781,
+      "cramers_v": 0.9129
+    },
+    "ethnic_x_language": {
+      "chi2": 4685.999999999999,
+      "p": 0.0,
+      "dof": 108,
+      "n": 781,
+      "cramers_v": 1.0
+    },
+    "genre_x_ritual": {
+      "chi2": 21087.0,
+      "p": 0.0,
+      "dof": 3720,
+      "n": 781,
+      "cramers_v": 0.9487
+    },
+    "country_x_genre": {
+      "chi2": 2343.0,
+      "p": 0.0,
+      "dof": 90,
+      "n": 781,
+      "cramers_v": 1.0
+    },
+    "ethnic_x_gender": {
+      "chi2": 1562.0,
+      "p": 2.4019342662634e-310,
+      "dof": 30,
+      "n": 781,
+      "cramers_v": 0.6325
+    }
+  },
+  "indian_folk_zoomed": {
+    "n": 605,
+    "n_genres": 15,
+    "n_artists": 126,
+    "genre_top10": {
+      "Bihu": 50,
+      "Bhatiali ": 50,
+      "Bhavageethe": 47,
+      "Lavani": 46,
+      "Tamang Selo": 46,
+      "Maand": 45,
+      "Sohar": 45,
+      "Bauls": 45,
+      "Giddha": 45,
+      "Garba": 45
+    },
+    "gender_dist": {
+      "Male": 359,
+      "Female": 236,
+      "Feamle": 5,
+      "Female ": 5
+    },
+    "state_dist": {
+      "West Bengal": 95,
+      "Uttar Pradesh": 75,
+      "Karnataka": 71,
+      "Assam": 50,
+      "Maharashtra": 46,
+      "Nepal": 46,
+      "Rajasthan": 45,
+      "Punjab": 45,
+      "Gujarat": 45,
+      "Northern India": 45,
+      "Uttarakhand": 26,
+      "Tamil Nadu ": 16
+    },
+    "artists_per_recording": {
+      "mean": 1.329,
+      "max": 4,
+      "p90": 2.0
+    },
+    "chi2_genre_state": {
+      "chi2": 6655.0,
+      "p": 0.0,
+      "dof": 154,
+      "n": 605,
+      "cramers_v": 1.0
+    },
+    "chi2_genre_gender": {
+      "chi2": 191.13836340565658,
+      "p": 6.5398433052516564e-21,
+      "dof": 42,
+      "n": 605,
+      "cramers_v": 0.3245
+    }
+  },
+  "license_distribution": {
+    "CC-BY-4.0": 669,
+    "Academic-use": 103,
+    "fair-use_research": 9
+  },
+  "data_sources": {
+    "BaiDabenquCorpus": "10.5281/zenodo.16746020",
+    "CCMUSIC_DATABASE": "10.13140/RG.2.2.13361.71527",
+    "ChoralSingingDataset": "10.5281/zenodo.2649950",
+    "DongTibetanYT": "",
+    "IndianFolkMusic": "10.5281/zenodo.6584021",
+    "MongolianKhoomei": "",
+    "MongolianYT": ""
+  }
+}

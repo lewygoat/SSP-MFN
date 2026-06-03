@@ -1,0 +1,91 @@
+{
+  "data_source": "1950 real 30s clips from {Bai, CCMUSIC, Choral, Dong/Tibetan YT, Mongolian YT}",
+  "model": "m-a-p/MERT-v1-95M, mean over hidden states then time",
+  "n_valid_embeddings": 1950,
+  "embedding_dim": 768,
+  "umap_silhouette_ethnic": 0.3208,
+  "umap_silhouette_corpus": 0.3018,
+  "ethnic_centers": [
+    {
+      "ethnic_group": "bai",
+      "n": 627,
+      "umap_x_mean": 2.709700107574463,
+      "umap_y_mean": -5.831299781799316,
+      "umap_x_std": 0.9763000011444092,
+      "umap_y_std": 1.2868000268936157
+    },
+    {
+      "ethnic_group": "dong",
+      "n": 300,
+      "umap_x_mean": 0.8881999850273132,
+      "umap_y_mean": 13.76360034942627,
+      "umap_x_std": 9.74209976196289,
+      "umap_y_std": 9.834699630737305
+    },
+    {
+      "ethnic_group": "han_chinese",
+      "n": 233,
+      "umap_x_mean": 10.94629955291748,
+      "umap_y_mean": 9.830599784851074,
+      "umap_x_std": 7.2733001708984375,
+      "umap_y_std": 6.611999988555908
+    },
+    {
+      "ethnic_group": "mongolian",
+      "n": 90,
+      "umap_x_mean": 9.2746000289917,
+      "umap_y_mean": 9.335200309753418,
+      "umap_x_std": 0.7026000022888184,
+      "umap_y_std": 7.397900104522705
+    },
+    {
+      "ethnic_group": "non-ethnic_western_choral",
+      "n": 576,
+      "umap_x_mean": 1.8144999742507935,
+      "umap_y_mean": 8.718299865722656,
+      "umap_x_std": 3.8308000564575195,
+      "umap_y_std": 3.5118000507354736
+    },
+    {
+      "ethnic_group": "tibetan",
+      "n": 124,
+      "umap_x_mean": 18.543500900268555,
+      "umap_y_mean": 8.048600196838379,
+      "umap_x_std": 5.105199813842773,
+      "umap_y_std": 9.558199882507324
+    }
+  ],
+  "corpus_centers": [
+    {
+      "corpus": "BaiDabenquCorpus",
+      "n": 627,
+      "umap_x_mean": 2.709700107574463,
+      "umap_y_mean": -5.831299781799316
+    },
+    {
+      "corpus": "CCMUSIC_DATABASE",
+      "n": 233,
+      "umap_x_mean": 10.94629955291748,
+      "umap_y_mean": 9.830599784851074
+    },
+    {
+      "corpus": "ChoralSingingDataset",
+      "n": 576,
+      "umap_x_mean": 1.8144999742507935,
+      "umap_y_mean": 8.718299865722656
+    },
+    {
+      "corpus": "DongTibetanYT",
+      "n": 424,
+      "umap_x_mean": 6.051499843597412,
+      "umap_y_mean": 12.09220027923584
+    },
+    {
+      "corpus": "MongolianYT",
+      "n": 90,
+      "umap_x_mean": 9.2746000289917,
+      "umap_y_mean": 9.335200309753418
+    }
+  ],
+  "n_failed": 0
+}

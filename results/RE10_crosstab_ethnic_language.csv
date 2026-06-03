@@ -1,0 +1,8 @@
+ethnic_group,Assamese,Bai,Bengali,Bhojpuri,Catalan_or_Spanish,Dong,Gujarati,Kannada,Kumaoni/Garhwali,Latin,Marathi,Mongolian,Punjabi,Rajasthani,Tamang,Tamil,Tibetan,Urdu,zh
+bai,0,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+dong,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0
+han_chinese,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,103
+mongolian,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0
+south_asian,50,0,95,75,0,0,45,71,26,0,46,0,45,45,46,16,0,45,0
+tibetan,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0
+western_choral_singers,0,0,0,0,32,0,0,0,0,16,0,0,0,0,0,0,0,0,0

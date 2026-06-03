@@ -1,0 +1,42 @@
+{
+  "experiment": "EXP1_S6_full",
+  "total_checks": 4,
+  "passed": 4,
+  "warnings": 0,
+  "critical": 0,
+  "verdict": "✓ PASS: 所有检查通过，可安全继续",
+  "checks": [
+    {
+      "name": "label_leakage",
+      "passed": true,
+      "metric": 0,
+      "threshold": 0,
+      "message": "无标签泄漏: 最大 |r|=0.2955 < 0.95",
+      "severity": "info"
+    },
+    {
+      "name": "overfit_ratio",
+      "passed": true,
+      "metric": 1.455668,
+      "threshold": 1.5,
+      "message": "过拟合可控: test/train=1.46 < 1.5",
+      "severity": "info"
+    },
+    {
+      "name": "permutation_baseline",
+      "passed": true,
+      "metric": 23.026332,
+      "threshold": 1.96,
+      "message": "模型显著优于置换基线: model=1.3263, perm=2.0982±0.0335, z=23.03",
+      "severity": "info"
+    },
+    {
+      "name": "stability",
+      "passed": true,
+      "metric": 0.004538,
+      "threshold": 0.15,
+      "message": "结果稳定: CV=0.0045 < 0.15, mean=1.3194±0.0060",
+      "severity": "info"
+    }
+  ]
+}

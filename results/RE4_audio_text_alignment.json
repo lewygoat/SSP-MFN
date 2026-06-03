@@ -1,0 +1,61 @@
+{
+  "data_source": "Bai Dabenqu Zenodo 16746020 (CC-BY-4.0)",
+  "n_pairs_used": 200,
+  "audio_model": "m-a-p/MERT-v1-95M",
+  "text_model": "xlm-roberta-base",
+  "task": "zero-shot audio-text retrieval (no contrastive training, frozen encoders)",
+  "by_text_language": {
+    "chinese": {
+      "audio2text": {
+        "recall@1": 0.005,
+        "recall@5": 0.035,
+        "recall@10": 0.065,
+        "median_rank": 105,
+        "mean_rank": 99.38
+      },
+      "text2audio": {
+        "recall@1": 0.005,
+        "recall@5": 0.03,
+        "recall@10": 0.05,
+        "median_rank": 98,
+        "mean_rank": 99.45
+      },
+      "n": 200
+    },
+    "bai_script": {
+      "audio2text": {
+        "recall@1": 0.0,
+        "recall@5": 0.03,
+        "recall@10": 0.045,
+        "median_rank": 100,
+        "mean_rank": 100.36
+      },
+      "text2audio": {
+        "recall@1": 0.005,
+        "recall@5": 0.03,
+        "recall@10": 0.06,
+        "median_rank": 99,
+        "mean_rank": 99.44
+      },
+      "n": 200
+    },
+    "english": {
+      "audio2text": {
+        "recall@1": 0.0,
+        "recall@5": 0.015,
+        "recall@10": 0.04,
+        "median_rank": 103,
+        "mean_rank": 99.87
+      },
+      "text2audio": {
+        "recall@1": 0.005,
+        "recall@5": 0.025,
+        "recall@10": 0.04,
+        "median_rank": 97,
+        "mean_rank": 99.96
+      },
+      "n": 200
+    }
+  },
+  "chance_recall@1": 0.005
+}

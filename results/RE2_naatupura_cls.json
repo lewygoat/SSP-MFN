@@ -1,0 +1,112 @@
+{
+  "data_source": "Zenodo 6584021 Indian Folk Naatupura, CC-BY-4.0",
+  "device": "mps",
+  "tasks": {
+    "gender_binary": {
+      "task": "gender",
+      "n_classes": 2,
+      "class_names": [
+        "Female",
+        "Male"
+      ],
+      "cv_kind": "GroupKFold(by_song)",
+      "n_splits": 5,
+      "n_samples": 2000,
+      "acc_mean": 0.43060758581929826,
+      "acc_std": 0.1862059503113484,
+      "f1_macro_mean": 0.3956465757358338,
+      "f1_macro_std": 0.20488951808552142,
+      "per_fold_acc": [
+        0.3046875,
+        0.327319587628866,
+        0.781038374717833,
+        0.4613466334164589,
+        0.2786458333333333
+      ],
+      "per_fold_f1": [
+        0.25301081927798624,
+        0.24660194174757283,
+        0.7790523690773068,
+        0.4395962732919255,
+        0.25997147528437753
+      ],
+      "chance_acc": 0.5
+    },
+    "artist_4cls": {
+      "task": "artist",
+      "n_classes": 4,
+      "class_names": [
+        "Arun Mozhi",
+        "K S Chithra",
+        "K S Vashudevan",
+        "Remya"
+      ],
+      "cv_kind": "GroupKFold(by_song)",
+      "n_splits": 5,
+      "n_samples": 2000,
+      "acc_mean": 0.414056443761546,
+      "acc_std": 0.08420996728612257,
+      "f1_macro_mean": 0.3230328997274042,
+      "f1_macro_std": 0.051223116227460695,
+      "per_fold_acc": [
+        0.3229166666666667,
+        0.49742268041237114,
+        0.49887133182844245,
+        0.4463840399002494,
+        0.3046875
+      ],
+      "per_fold_f1": [
+        0.2563997662185856,
+        0.3494807632898458,
+        0.4061700148601573,
+        0.31008234507302973,
+        0.29303160919540233
+      ],
+      "chance_acc": 0.25
+    },
+    "song_16cls": {
+      "task": "song",
+      "n_classes": 16,
+      "class_names": [
+        "Aadarkkum Thaye",
+        "Fishing",
+        "Harvest",
+        "Karaiyoram",
+        "Kezhukkaale",
+        "Koki Vaichen",
+        "Love",
+        "Mariyamma Mariyamma",
+        "Nattupura Paatu",
+        "Otha Roovai",
+        "Othharoovaa",
+        "Pongalo Pongal",
+        "Recreation",
+        "Satti Potti",
+        "Transplantation",
+        "Unnai Kaanaamal Naan Ethu"
+      ],
+      "cv_kind": "StratifiedKFold",
+      "n_splits": 5,
+      "n_samples": 2000,
+      "acc_mean": 0.8375,
+      "acc_std": 0.032977264895682305,
+      "f1_macro_mean": 0.8221418539571254,
+      "f1_macro_std": 0.03507098942192953,
+      "per_fold_acc": [
+        0.8675,
+        0.8525,
+        0.87,
+        0.7875,
+        0.81
+      ],
+      "per_fold_f1": [
+        0.8531079675015902,
+        0.8592681269002878,
+        0.8380207886176052,
+        0.7759801180224319,
+        0.7843322687437112
+      ],
+      "chance_acc": 0.0625
+    }
+  }
+}

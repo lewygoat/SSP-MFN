@@ -1,0 +1,55 @@
+{
+  "per_dim": {
+    "ICS": {
+      "mae_no_audio": 1.0193504021939255,
+      "mae_with_audio": 1.0302082307226643,
+      "delta_mae": 0.010857828528738844,
+      "r2_no_audio": 0.851827975845801,
+      "r2_with_audio": 0.8480444311085925,
+      "delta_r2": -0.003783544737208544
+    },
+    "IRI": {
+      "mae_no_audio": 1.0112393961977708,
+      "mae_with_audio": 1.0038532025631937,
+      "delta_mae": -0.007386193634577154,
+      "r2_no_audio": 0.7011835497091199,
+      "r2_with_audio": 0.6994407684002357,
+      "delta_r2": -0.001742781308884167
+    },
+    "CSAS": {
+      "mae_no_audio": 1.071744949127453,
+      "mae_with_audio": 1.0594162846495725,
+      "delta_mae": -0.012328664477880613,
+      "r2_no_audio": 0.7912858643631393,
+      "r2_with_audio": 0.8030243090315553,
+      "delta_r2": 0.011738444668416004
+    },
+    "SSCS": {
+      "mae_no_audio": 1.059954853746845,
+      "mae_with_audio": 1.0626946691193058,
+      "delta_mae": 0.0027398153724607077,
+      "r2_no_audio": 0.7959541704660043,
+      "r2_with_audio": 0.7966035834917359,
+      "delta_r2": 0.0006494130257316266
+    },
+    "IOS": {
+      "mae_no_audio": 1.0237909406520105,
+      "mae_with_audio": 1.059996173051531,
+      "delta_mae": 0.03620523239952056,
+      "r2_no_audio": 0.8504964104860757,
+      "r2_with_audio": 0.8440777286905625,
+      "delta_r2": -0.0064186817955131925
+    },
+    "SCI2": {
+      "mae_no_audio": 1.0167588547932898,
+      "mae_with_audio": 1.036021749007722,
+      "delta_mae": 0.01926289421443217,
+      "r2_no_audio": 0.7037465287866542,
+      "r2_with_audio": 0.6879532111767547,
+      "delta_r2": -0.01579331760989955
+    }
+  },
+  "model": "GradientBoosting + Choral-derived 16-d PCA audio emb",
+  "audio_emb_source": "实验/features/choral_real_emb.parquet",
+  "n_features_with_audio": 33
+}

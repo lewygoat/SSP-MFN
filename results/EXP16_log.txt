@@ -1,0 +1,72 @@
+[EXP-16] Falsification controls · device=mps
+/Volumes/拓展盘/安联的扫地僧/SCI/计算机交叉/基于⺠族⾳乐交流的社会技能提升预测/实验/src/EXP1_sspmfn_main.py:81: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  sub = manifest.groupby("ethnic_group", group_keys=False).apply(
+  planted signals: H3→CSAS(audio), H4→SSCS(part), H6→SCI2(meta), cross-modal→ICS/IRI/IOS
+  dataset: N=850, audio=30, meta=11, part=14
+  y_adj stats: mean=-0.006, std=1.268
+  N=850, audio=30, meta=11, part=14
+
+[DAP-1] label leakage scan...
+  无标签泄漏: 最大 |r|=0.2607 < 0.95
+
+[C0_full] true ethnic labels, full AdaIN, 3 seeds × 5-fold...
+  seed=17: R²_6=0.0183
+  seed=42: R²_6=0.0183
+  seed=2024: R²_6=0.0183
+
+[C1_shuffled] permuted ethnic labels (frequency-preserving), 3 seeds...
+  seed=17: R²_6=0.0091
+  seed=42: R²_6=0.0013
+  seed=2024: R²_6=0.0097
+
+[C2_zeroembed] frozen-zero embedding + trainable affine, 3 seeds...
+  seed=17: R²_6=0.0202
+  seed=42: R²_6=0.0202
+  seed=2024: R²_6=0.0202
+  [partial save] → /Volumes/拓展盘/安联的扫地僧/SCI/计算机交叉/基于⺠族⾳乐交流的社会技能提升预测/实验/results/EXP16_falsification_controls.json
+
+[DAP-2] stability across seeds (C0)...
+  结果稳定: CV=0.0000 < 0.15, mean=0.0183±0.0000
+
+[DAP-3] overfit on fold-0 (train vs test RMSE)...
+  过拟合可控: test/train=1.50 < 1.5
+
+[DAP-4] train/test distribution shift (fold-0)...
+  ⚠️ 分布偏移: 17/55 特征偏移显著. Top3: [('feat_5', 'KS=0.159'), ('feat_0', 'KS=0.157'), ('feat_1', 'KS=0.153')]
+
+[DAP-5] permutation baseline (random labels)...
+  模型显著优于置换基线: model=1.2558, perm=1.8274±0.0288, z=19.87
+
+============================================================
+  防御性分析报告: EXP16_falsification
+============================================================
+  ✓ [label_leakage] 无标签泄漏: 最大 |r|=0.2607 < 0.95
+  ✓ [stability] 结果稳定: CV=0.0000 < 0.15, mean=0.0183±0.0000
+  ✓ [overfit_ratio] 过拟合可控: test/train=1.50 < 1.5
+  ⚠️ [distribution_shift] ⚠️ 分布偏移: 17/55 特征偏移显著. Top3: [('feat_5', 'KS=0.159'), ('feat_0', 'KS=0.157'), ('feat_1', 'KS=0.153')]
+  ✓ [permutation_baseline] 模型显著优于置换基线: model=1.2558, perm=1.8274±0.0288, z=19.87
+
+  总结: 4/5 通过, 1 警告, 0 严重
+  判定: ⚠️ PROCEED_WITH_CAUTION: 有轻微问题，可继续但需在论文中声明
+============================================================
+
+
+saved → /Volumes/拓展盘/安联的扫地僧/SCI/计算机交叉/基于⺠族⾳乐交流的社会技能提升预测/实验/results/EXP16_falsification_controls.json
+
+==============================================================================
+  EXP-16 Falsification Controls Summary
+==============================================================================
+  Variant                R²_6 (mean±std)        R²_4 (mean±std)        ΔR²_6     
+  ---------------------------------------------------------------------------
+  C0_full (reference)    0.0183±0.0000     0.0158±0.0000     +0.0000
+  C1_shuffled labels     0.0067±0.0038     0.0029±0.0029     -0.0116
+  C2_zero-embedding      0.0202±0.0000     0.0186±0.0000     +0.0019
+==============================================================================
+
+  C1 - C0 (shuffled vs true): R²_6 Δ=-0.0116, R²_4 Δ=-0.0129
+  C2 - C0 (zero-emb vs true): R²_6 Δ=+0.0019, R²_4 Δ=+0.0028
+  elapsed: 524.6s
+
+Interpretation:
+  • |C1 - C0| large AND |C2 - C0| large  → AdaIN gain attributable to group structure
+  • |C1 - C0| ≈ 0   OR  |C2 - C0| ≈ 0    → gain likely from capacity not group identity

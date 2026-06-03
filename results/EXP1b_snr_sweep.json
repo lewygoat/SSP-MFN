@@ -1,0 +1,306 @@
+{
+  "sweep": [
+    {
+      "config": {
+        "name": "S1_lowSNR_lowInt",
+        "signal": 0.5,
+        "noise": 1.0,
+        "interact_ratio": 0.3
+      },
+      "N850": {
+        "n": 850,
+        "SSP_MFN": {
+          "rmse": 1.6019,
+          "r2": -0.0049,
+          "r_mean": 0.0306
+        },
+        "Ridge": {
+          "rmse": 1.6159,
+          "r2": -0.0229,
+          "r_mean": 0.0957
+        },
+        "XGBoost": {
+          "rmse": 1.636,
+          "r2": -0.0479,
+          "r_mean": 0.0289
+        },
+        "MFN_wins_Ridge": true
+      },
+      "N220": {
+        "n": 220,
+        "SSP_MFN": {
+          "rmse": 1.61,
+          "r2": -0.0249,
+          "r_mean": -0.0284
+        },
+        "Ridge": {
+          "rmse": 1.7295,
+          "r2": -0.1802,
+          "r_mean": 0.071
+        },
+        "XGBoost": {
+          "rmse": 1.6844,
+          "r2": -0.123,
+          "r_mean": 0.0311
+        },
+        "MFN_wins_Ridge": true
+      }
+    },
+    {
+      "config": {
+        "name": "S2_lowSNR_highInt",
+        "signal": 0.5,
+        "noise": 1.0,
+        "interact_ratio": 0.7
+      },
+      "N850": {
+        "n": 850,
+        "SSP_MFN": {
+          "rmse": 1.6069,
+          "r2": -0.0104,
+          "r_mean": -0.0006
+        },
+        "Ridge": {
+          "rmse": 1.6236,
+          "r2": -0.0319,
+          "r_mean": 0.0698
+        },
+        "XGBoost": {
+          "rmse": 1.6401,
+          "r2": -0.0525,
+          "r_mean": 0.0061
+        },
+        "MFN_wins_Ridge": true
+      },
+      "N220": {
+        "n": 220,
+        "SSP_MFN": {
+          "rmse": 1.6089,
+          "r2": -0.0191,
+          "r_mean": -0.0197
+        },
+        "Ridge": {
+          "rmse": 1.7338,
+          "r2": -0.1803,
+          "r_mean": 0.0705
+        },
+        "XGBoost": {
+          "rmse": 1.6983,
+          "r2": -0.1352,
+          "r_mean": 0.0299
+        },
+        "MFN_wins_Ridge": true
+      }
+    },
+    {
+      "config": {
+        "name": "S3_midSNR_lowInt",
+        "signal": 1.0,
+        "noise": 0.6,
+        "interact_ratio": 0.3
+      },
+      "N850": {
+        "n": 850,
+        "SSP_MFN": {
+          "rmse": 1.3891,
+          "r2": 0.0295,
+          "r_mean": 0.1657
+        },
+        "Ridge": {
+          "rmse": 1.3874,
+          "r2": 0.0312,
+          "r_mean": 0.2162
+        },
+        "XGBoost": {
+          "rmse": 1.4116,
+          "r2": -0.0024,
+          "r_mean": 0.1411
+        },
+        "MFN_wins_Ridge": false
+      },
+      "N220": {
+        "n": 220,
+        "SSP_MFN": {
+          "rmse": 1.3936,
+          "r2": 0.0108,
+          "r_mean": 0.1134
+        },
+        "Ridge": {
+          "rmse": 1.4898,
+          "r2": -0.1264,
+          "r_mean": 0.1535
+        },
+        "XGBoost": {
+          "rmse": 1.4716,
+          "r2": -0.1048,
+          "r_mean": 0.078
+        },
+        "MFN_wins_Ridge": true
+      }
+    },
+    {
+      "config": {
+        "name": "S4_midSNR_highInt",
+        "signal": 1.0,
+        "noise": 0.6,
+        "interact_ratio": 0.7
+      },
+      "N850": {
+        "n": 850,
+        "SSP_MFN": {
+          "rmse": 1.4117,
+          "r2": 0.0062,
+          "r_mean": 0.1096
+        },
+        "Ridge": {
+          "rmse": 1.4244,
+          "r2": -0.0109,
+          "r_mean": 0.1342
+        },
+        "XGBoost": {
+          "rmse": 1.4352,
+          "r2": -0.0265,
+          "r_mean": 0.0798
+        },
+        "MFN_wins_Ridge": true
+      },
+      "N220": {
+        "n": 220,
+        "SSP_MFN": {
+          "rmse": 1.4303,
+          "r2": -0.0194,
+          "r_mean": 0.0344
+        },
+        "Ridge": {
+          "rmse": 1.5234,
+          "r2": -0.1553,
+          "r_mean": 0.118
+        },
+        "XGBoost": {
+          "rmse": 1.4889,
+          "r2": -0.1074,
+          "r_mean": 0.072
+        },
+        "MFN_wins_Ridge": true
+      }
+    },
+    {
+      "config": {
+        "name": "S5_highSNR_lowInt",
+        "signal": 1.5,
+        "noise": 0.3,
+        "interact_ratio": 0.3
+      },
+      "N850": {
+        "n": 850,
+        "SSP_MFN": {
+          "rmse": 1.2912,
+          "r2": 0.1005,
+          "r_mean": 0.3057
+        },
+        "Ridge": {
+          "rmse": 1.2854,
+          "r2": 0.1079,
+          "r_mean": 0.3307
+        },
+        "XGBoost": {
+          "rmse": 1.3044,
+          "r2": 0.0821,
+          "r_mean": 0.2836
+        },
+        "MFN_wins_Ridge": false
+      },
+      "N220": {
+        "n": 220,
+        "SSP_MFN": {
+          "rmse": 1.3271,
+          "r2": 0.0297,
+          "r_mean": 0.1403
+        },
+        "Ridge": {
+          "rmse": 1.3908,
+          "r2": -0.0611,
+          "r_mean": 0.241
+        },
+        "XGBoost": {
+          "rmse": 1.3722,
+          "r2": -0.0363,
+          "r_mean": 0.1695
+        },
+        "MFN_wins_Ridge": true
+      }
+    },
+    {
+      "config": {
+        "name": "S6_highSNR_highInt",
+        "signal": 1.5,
+        "noise": 0.3,
+        "interact_ratio": 0.7
+      },
+      "N850": {
+        "n": 850,
+        "SSP_MFN": {
+          "rmse": 1.326,
+          "r2": 0.0782,
+          "r_mean": 0.2761
+        },
+        "Ridge": {
+          "rmse": 1.3746,
+          "r2": 0.0132,
+          "r_mean": 0.1922
+        },
+        "XGBoost": {
+          "rmse": 1.356,
+          "r2": 0.0368,
+          "r_mean": 0.2064
+        },
+        "MFN_wins_Ridge": true
+      },
+      "N220": {
+        "n": 220,
+        "SSP_MFN": {
+          "rmse": 1.4025,
+          "r2": -0.0314,
+          "r_mean": 0.0064
+        },
+        "Ridge": {
+          "rmse": 1.4789,
+          "r2": -0.1473,
+          "r_mean": 0.1492
+        },
+        "XGBoost": {
+          "rmse": 1.4258,
+          "r2": -0.0683,
+          "r_mean": 0.119
+        },
+        "MFN_wins_Ridge": true
+      }
+    }
+  ],
+  "DAP": {
+    "experiment": "EXP1b_snr_sweep",
+    "total_checks": 2,
+    "passed": 2,
+    "warnings": 0,
+    "critical": 0,
+    "verdict": "✓ PASS: 所有检查通过，可安全继续",
+    "checks": [
+      {
+        "name": "stability",
+        "passed": true,
+        "metric": 0.086388,
+        "threshold": 0.15,
+        "message": "结果稳定: CV=0.0864 < 0.15, mean=1.4378±0.1242",
+        "severity": "info"
+      },
+      {
+        "name": "permutation_baseline",
+        "passed": true,
+        "metric": 19.98675537109375,
+        "threshold": 1.96,
+        "message": "模型显著优于置换基线: model=1.3891, perm=2.0171±0.0314, z=19.99",
+        "severity": "info"
+      }
+    ]
+  }
+}

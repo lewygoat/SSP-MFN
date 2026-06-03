@@ -1,0 +1,37 @@
+{
+  "data_source": "Zenodo 16746020 Bai Dabenqu, CC-BY-4.0",
+  "n_phrase": 1566,
+  "n_songs": 4,
+  "song_classes": [
+    "兰季子",
+    "访白袍",
+    "访白袍第一场",
+    "访白袍第二场"
+  ],
+  "language_evaluation": {
+    "chinese": {
+      "n_samples": 1566,
+      "acc_mean": 0.7031,
+      "acc_std": 0.0164,
+      "f1_macro_mean": 0.4017,
+      "f1_macro_std": 0.0569,
+      "chance_acc": 0.25
+    },
+    "ethnic_bai": {
+      "n_samples": 1566,
+      "acc_mean": 0.6475,
+      "acc_std": 0.0167,
+      "f1_macro_mean": 0.3324,
+      "f1_macro_std": 0.0229,
+      "chance_acc": 0.25
+    },
+    "english": {
+      "n_samples": 1566,
+      "acc_mean": 0.7241,
+      "acc_std": 0.0255,
+      "f1_macro_mean": 0.4128,
+      "f1_macro_std": 0.0364,
+      "chance_acc": 0.25
+    }
+  }
+}

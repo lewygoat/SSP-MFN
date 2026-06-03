@@ -1,0 +1,466 @@
+{
+  "data_source": "Zenodo 2649950 ChoralSingingDataset, CC-BY-4.0",
+  "n_files_processed": 48,
+  "voice_acoustic_stats": {
+    "alto": {
+      "n": 12,
+      "f0_mean": 365.43,
+      "f0_std": 46.25
+    },
+    "bass": {
+      "n": 12,
+      "f0_mean": 177.54,
+      "f0_std": 48.25
+    },
+    "soprano": {
+      "n": 12,
+      "f0_mean": 455.3,
+      "f0_std": 42.94
+    },
+    "tenor": {
+      "n": 12,
+      "f0_mean": 254.38,
+      "f0_std": 17.29
+    }
+  },
+  "per_piece_take_voice_correlation": {
+    "ER_take1": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5103,
+        "r": 0.1124,
+        "p": 8.02060098621776e-16
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 5170,
+        "r": 0.7481,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 5100,
+        "r": 0.7786,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5109,
+        "r": -0.0107,
+        "p": 0.4443827367293973
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5087,
+        "r": 0.3973,
+        "p": 5.551132596739675e-192
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 5108,
+        "r": 0.4581,
+        "p": 1.651196579045292e-263
+      }
+    },
+    "ER_take2": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5136,
+        "r": 0.2567,
+        "p": 4.660558428398888e-78
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 5162,
+        "r": 0.5825,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 5059,
+        "r": 0.6991,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5097,
+        "r": -0.0289,
+        "p": 0.03927424456628164
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5051,
+        "r": 0.4843,
+        "p": 2.426629942571755e-295
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 5050,
+        "r": 0.1913,
+        "p": 8.202074134037962e-43
+      }
+    },
+    "ER_take3": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5107,
+        "r": 0.1176,
+        "p": 3.417196520370174e-17
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 5164,
+        "r": 0.6492,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 5031,
+        "r": 0.6388,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5147,
+        "r": -0.0036,
+        "p": 0.7964245377695808
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5006,
+        "r": 0.4912,
+        "p": 2.2121320468319124e-302
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 5084,
+        "r": 0.244,
+        "p": 8.812648720154412e-70
+      }
+    },
+    "ER_take4": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5069,
+        "r": 0.1785,
+        "p": 1.4942447705839807e-37
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 5143,
+        "r": 0.5999,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 5080,
+        "r": 0.6249,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5052,
+        "r": -0.0263,
+        "p": 0.06126350812233668
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5038,
+        "r": 0.7163,
+        "p": 0.0
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 5076,
+        "r": 0.2069,
+        "p": 3.1843958584238174e-50
+      }
+    },
+    "LI_take1": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5231,
+        "r": 0.0923,
+        "p": 2.2141856956278302e-11
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 6495,
+        "r": 0.8374,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 6218,
+        "r": 0.8117,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5383,
+        "r": 0.1175,
+        "p": 5.3545117234382756e-18
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5027,
+        "r": 0.3442,
+        "p": 7.961348684781322e-140
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 6303,
+        "r": 0.6039,
+        "p": 0.0
+      }
+    },
+    "LI_take2": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5747,
+        "r": 0.0132,
+        "p": 0.3181486658453775
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 6496,
+        "r": 0.8008,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 6291,
+        "r": 0.7004,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5747,
+        "r": -0.0846,
+        "p": 1.3290680534683708e-10
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5503,
+        "r": -0.0163,
+        "p": 0.2265269760248796
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 6299,
+        "r": 0.5804,
+        "p": 0.0
+      }
+    },
+    "LI_take3": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5638,
+        "r": 0.1886,
+        "p": 2.5259471490875696e-46
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 6652,
+        "r": 0.8832,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 6380,
+        "r": 0.7386,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5758,
+        "r": 0.0509,
+        "p": 0.00011109950688865327
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5495,
+        "r": 0.0682,
+        "p": 4.1793402035975613e-07
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 6399,
+        "r": 0.6673,
+        "p": 0.0
+      }
+    },
+    "LI_take4": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 5283,
+        "r": 0.2366,
+        "p": 4.276187520207224e-68
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 6432,
+        "r": 0.8119,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 6307,
+        "r": 0.7989,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 5205,
+        "r": 0.118,
+        "p": 1.3636943624278244e-17
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 5050,
+        "r": 0.2453,
+        "p": 4.224863514683745e-70
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 6280,
+        "r": 0.5835,
+        "p": 0.0
+      }
+    },
+    "ND_take1": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 3704,
+        "r": 0.1949,
+        "p": 4.989683074385781e-33
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 3796,
+        "r": 0.6945,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 3829,
+        "r": 0.5077,
+        "p": 4.7254973424012755e-250
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 3765,
+        "r": 0.2522,
+        "p": 9.965898635604078e-56
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 3689,
+        "r": 0.3135,
+        "p": 5.965636910286418e-85
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 3760,
+        "r": 0.2835,
+        "p": 1.9526878533130826e-70
+      }
+    },
+    "ND_take2": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 3709,
+        "r": 0.185,
+        "p": 6.607192565695841e-30
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 3777,
+        "r": 0.6927,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 3823,
+        "r": 0.4655,
+        "p": 6.091421534702776e-205
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 3693,
+        "r": 0.2317,
+        "p": 3.348839041729969e-46
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 3631,
+        "r": 0.3033,
+        "p": 3.7345065630060223e-78
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 3690,
+        "r": 0.1149,
+        "p": 2.5000538518498923e-12
+      }
+    },
+    "ND_take3": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 3710,
+        "r": 0.1169,
+        "p": 9.264046303582504e-13
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 3783,
+        "r": 0.6357,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 3779,
+        "r": 0.7567,
+        "p": 0.0
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 3750,
+        "r": 0.2383,
+        "p": 1.4744986062718693e-49
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 3640,
+        "r": 0.2196,
+        "p": 5.39632533481666e-41
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 3692,
+        "r": 0.1713,
+        "p": 1.034924082802007e-25
+      }
+    },
+    "ND_take4": {
+      "alto_vs_bass": {
+        "n_voiced_overlap": 3711,
+        "r": 0.1524,
+        "p": 1.0246230050232308e-20
+      },
+      "alto_vs_soprano": {
+        "n_voiced_overlap": 3780,
+        "r": 0.6364,
+        "p": 0.0
+      },
+      "alto_vs_tenor": {
+        "n_voiced_overlap": 3812,
+        "r": 0.3986,
+        "p": 2.4406471646743246e-145
+      },
+      "bass_vs_soprano": {
+        "n_voiced_overlap": 3732,
+        "r": 0.228,
+        "p": 3.387009404120114e-45
+      },
+      "bass_vs_tenor": {
+        "n_voiced_overlap": 3638,
+        "r": 0.3071,
+        "p": 2.6820318678866255e-80
+      },
+      "soprano_vs_tenor": {
+        "n_voiced_overlap": 3746,
+        "r": 0.0461,
+        "p": 0.004737725488670044
+      }
+    }
+  },
+  "pair_r_summary": [
+    {
+      "pair": "alto_vs_bass",
+      "mean": 0.1538,
+      "std": 0.0673,
+      "min": 0.0132,
+      "max": 0.2567,
+      "count": 12
+    },
+    {
+      "pair": "alto_vs_soprano",
+      "mean": 0.7144,
+      "std": 0.0998,
+      "min": 0.5825,
+      "max": 0.8832,
+      "count": 12
+    },
+    {
+      "pair": "alto_vs_tenor",
+      "mean": 0.66,
+      "std": 0.1369,
+      "min": 0.3986,
+      "max": 0.8117,
+      "count": 12
+    },
+    {
+      "pair": "bass_vs_soprano",
+      "mean": 0.0902,
+      "std": 0.1234,
+      "min": -0.0846,
+      "max": 0.2522,
+      "count": 12
+    },
+    {
+      "pair": "bass_vs_tenor",
+      "mean": 0.3228,
+      "std": 0.1936,
+      "min": -0.0163,
+      "max": 0.7163,
+      "count": 12
+    },
+    {
+      "pair": "soprano_vs_tenor",
+      "mean": 0.3459,
+      "std": 0.2185,
+      "min": 0.0461,
+      "max": 0.6673,
+      "count": 12
+    }
+  ],
+  "interpretation": {
+    "high_r": "同 piece+take 内某两个声部 log-F0 高相关 → 协同/同步性强",
+    "expected_pairs": "soprano-alto / tenor-bass 一般 r 较高 (同性别声区)"
+  }
+}
